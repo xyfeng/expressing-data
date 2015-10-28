@@ -1,0 +1,657 @@
+City,Chinese,Province,Prefecture,Founded,Population
+Beijing,北京市,municipal,none,1949-10-01,19295000
+Chongqing,重庆市,municipal,none,1997-03-14,7457589
+Shanghai,上海市,municipal,none,1949-10-01,22265426
+Tianjin,天津市,municipal,none,1967-01-02,11090314
+Hong Kong,香港特别行政区,autonomous,none,1997-07-01,1000000
+Macau,澳门特别行政区,autonomous,none,1999-12-20,1000000
+Anqing,安庆市,Anhui,direct administration,1979-11-04,780514
+Bengbu,蚌埠市,Anhui,direct administration,1949-10-01,972784
+Bozhou,亳州市,Anhui,direct administration,2000-05-21,1409436
+Chaohu,巢湖市,Anhui,Hefei,2011-07-14,1000000
+Chizhou,池州市,Anhui,direct administration,2000-06-25,1000000
+Chuzhou,滁州市,Anhui,direct administration,1992-12-20,562321
+Fuyang,阜阳市,Anhui,direct administration,1996-01-01,1768947
+Hefei,合肥市,Anhui,direct administration,1949-10-01,3352076
+Huaibei,淮北市,Anhui,direct administration,1960-04-16,1113321
+Huainan,淮南市,Anhui,direct administration,1952-06-02,1666826
+Huangshan,黄山市,Anhui,direct administration,1987-11-27,1000000
+Jieshou,界首市,Anhui,Fuyang,1989-09-27,1000000
+Lu'an,六安市,Anhui,direct administration,1999-09-02,1778583
+Ma'anshan,马鞍山市,Anhui,direct administration,1958-10-22,741531
+Mingguang,明光市,Anhui,Chuzhou,1994-05-31,1000000
+Ningguo,宁国市,Anhui,Xuancheng,1997-03-11,1000000
+Suzhou,宿州市,Anhui,direct administration,1998-12-06,1647642
+Tianchang,天长市,Anhui,Chuzhou,1993-09-18,1000000
+Tongcheng,桐城市,Anhui,Anqing,1996-08-20,1000000
+Tongling,铜陵市,Anhui,direct administration,1971-12-11,1000000
+Wuhu,芜湖市,Anhui,direct administration,1972-12-30,1307042
+Xuancheng,宣城市,Anhui,direct administration,2000-06-25,1000000
+Changle,长乐市,Fujian,Fuzhou,1994-02-18,1000000
+Fu'an,福安市,Fujian,Ningde,1989-11-13,1000000
+Fuding,福鼎市,Fujian,Ningde,1995-10-13,1000000
+Fuqing,福清市,Fujian,Fuzhou,1990-12-26,1234838
+Fuzhou,福州市,Fujian,direct administration,1949-10-01,2921763
+Jian'ou,建瓯市,Fujian,Nanping,1992-10-20,1000000
+Jinjiang,晋江市,Fujian,Quanzhou,1992-03-06,1000000
+Longhai,龙海市,Fujian,Zhangzhou,1993-05-12,1000000
+Longyan,龙岩市,Fujian,direct administration,1996-11-20,1000000
+Nan'an,南安市,Fujian,Quanzhou,1993-05-12,1000000
+Nanping,南平市,Fujian,direct administration,1994-09-05,467875
+Ningde,宁德市,Fujian,direct administration,1999-11-14,1000000
+Putian,莆田市,Fujian,direct administration,1983-09-09,1953801
+Quanzhou,泉州市,Fujian,direct administration,1985-05-14,1398427
+Sanming,三明市,Fujian,direct administration,1983-04-28,1000000
+Shaowu,邵武市,Fujian,Nanping,1983-08-17,1000000
+Shishi,石狮市,Fujian,Quanzhou,1987-12-17,1000000
+Wuyishan,武夷山市,Fujian,Nanping,1989-08-21,1000000
+Xiamen,厦门市,Fujian,direct administration,1949-10-01,3531347
+Yong'an,永安市,Fujian,Sanming,1984-09-12,1000000
+Zhangping,漳平市,Fujian,Longyan,1990-08-15,1000000
+Zhangzhou,漳州市,Fujian,direct administration,1985-05-14,705649
+Baiyin,白银市,Gansu,direct administration,1985-05-14,1000000
+Dingxi,定西市,Gansu,direct administration,2003-04-04,1000000
+Dunhuang,敦煌市,Gansu,Jiuquan,1987-08-21,1000000
+Hezuo,合作市,Gansu,Gannan,1996-05-28,1000000
+Jiayuguan,嘉峪关市,Gansu,direct administration,1971-09-10,1000000
+Jinchang,金昌市,Gansu,direct administration,1981-02-09,1000000
+Jiuquan,酒泉市,Gansu,direct administration,2002-06-18,1000000
+Lanzhou,兰州市,Gansu,direct administration,1949-10-01,2492325
+Linxia,临夏市,Gansu,Linxia,1983-08-31,1000000
+Longnan,陇南市,Gansu,direct administration,2004-01-11,1000000
+Pingliang,平凉市,Gansu,direct administration,2002-06-02,1000000
+Qingyang,庆阳市,Gansu,direct administration,2002-06-22,1000000
+Tianshui,天水市,Gansu,direct administration,1985-07-08,1197174
+Wuwei,武威市,Gansu,direct administration,2001-05-09,1010295
+Yumen,玉门市,Gansu,Jiuquan,1961-11-21,1000000
+Zhangye,张掖市,Gansu,direct administration,2002-03-01,1000000
+Chaozhou,潮州市,Guangdong,direct administration,1991-12-07,452472
+Dongguan,东莞市,Guangdong,direct administration,1988-01-07,8220937
+Enping,恩平市,Guangdong,Jiangmen,1994-02-28,1000000
+Foshan,佛山市,Guangdong,direct administration,1975-11-22,1000000
+Gaozhou,高州市,Guangdong,Maoming,1993-06-08,1000000
+Guangzhou,广州市,Guangdong,direct administration,1954-06-19,11070654
+Heshan,鹤山市,Guangdong,Jiangmen,1993-11-08,1000000
+Heyuan,河源市,Guangdong,direct administration,1988-01-07,1000000
+Huazhou,化州市,Guangdong,Maoming,1994-07-04,1178873
+Huizhou,惠州市,Guangdong,direct administration,1988-01-07,2344507
+Jiangmen,江门市,Guangdong,direct administration,1975-11-22,1822640
+Jieyang,揭阳市,Guangdong,direct administration,1991-12-07,1000000
+Kaiping,开平市,Guangdong,Jiangmen,1993-01-05,1000000
+Lechang,乐昌市,Guangdong,Shaoguan,1994-04-28,1000000
+Leizhou,雷州市,Guangdong,Zhanjiang,1994-04-26,1000000
+Lianjiang,廉江市,Guangdong,Zhanjiang,1993-12-10,1000000
+Lianzhou,连州市,Guangdong,Qingyuan,1994-04-22,1000000
+Lufeng,陆丰市,Guangdong,Shanwei,1995-01-19,1000000
+Luoding,罗定市,Guangdong,Yunfu,1993-04-08,1000000
+Maoming,茂名市,Guangdong,direct administration,1975-11-22,1217715
+Meizhou,梅州市,Guangdong,direct administration,1988-01-07,1000000
+Nanxiong,南雄市,Guangdong,Shaoguan,1996-06-17,1000000
+Puning,普宁市,Guangdong,Jieyang,1993-04-06,1000000
+Qingyuan,清远市,Guangdong,direct administration,1988-01-07,1000000
+Shantou,汕头市,Guangdong,direct administration,1975-11-22,1346708
+Shanwei,汕尾市,Guangdong,direct administration,1988-01-07,1000000
+Shaoguan,韶关市,Guangdong,direct administration,1975-11-22,1000000
+Shenzhen,深圳市,Guangdong,direct administration,1979-03-05,10357938
+Sihui,四会市,Guangdong,Zhaoqing,1993-11-25,1000000
+Taishan,台山市,Guangdong,Jiangmen,1992-04-17,1000000
+Wuchuan,吴川市,Guangdong,Zhanjiang,1994-05-26,947499
+Xingning,兴宁市,Guangdong,Meizhou,1994-06-06,1000000
+Xinyi,信宜市,Guangdong,Maoming,1995-09-11,1000000
+Yangchun,阳春市,Guangdong,Yangjiang,1994-05-05,1000000
+Yangjiang,阳江市,Guangdong,direct administration,1988-01-07,676858
+Yingde,英德市,Guangdong,Qingyuan,1994-01-12,1000000
+Yunfu,云浮市,Guangdong,direct administration,1994-04-05,1000000
+Zhanjiang,湛江市,Guangdong,direct administration,1975-11-22,1612300
+Zhaoqing,肇庆市,Guangdong,direct administration,1988-01-07,644045
+Zhongshan,中山市,Guangdong,direct administration,1988-01-07,1000000
+Zhuhai,珠海市,Guangdong,direct administration,1979-03-05,1560229
+Baise,百色市,Guangxi,direct administration,2002-06-02,1000000
+Beihai,北海市,Guangxi,direct administration,1983-10-08,668085
+Beiliu,北流市,Guangxi,Yulin,1994-04-18,1000000
+Cenxi,岑溪市,Guangxi,Wuzhou,1995-09-11,1000000
+Chongzuo,崇左市,Guangxi,direct administration,2002-12-23,1000000
+Dongxing,东兴市,Guangxi,Fangchenggang,1996-04-29,1000000
+Fangchenggang,防城港市,Guangxi,direct administration,1993-05-23,1000000
+Guigang,贵港市,Guangxi,direct administration,1995-10-27,1493874
+Guilin,桂林市,Guangxi,direct administration,1961-11-25,975638
+Guiping,桂平市,Guangxi,Guigang,1994-05-18,1000000
+Hechi,河池市,Guangxi,direct administration,2002-06-18,1000000
+Heshan,合山市,Guangxi,Laibin,1981-06-29,1000000
+Hezhou,贺州市,Guangxi,direct administration,2002-06-18,1005500
+Jingxi,靖西市,Guangxi,Baise,2015-08-01,1000000
+Laibin,来宾市,Guangxi,direct administration,2002-09-29,1000000
+Liuzhou,柳州市,Guangxi,direct administration,1961-11-25,1436599
+Nanning,南宁市,Guangxi,direct administration,1961-12-23,3437171
+Pingxiang,凭祥市,Guangxi,Chongzuo,1961-05-27,1000000
+Qinzhou,钦州市,Guangxi,direct administration,1994-06-28,1000000
+Wuzhou,梧州市,Guangxi,direct administration,1961-11-25,1000000
+Yizhou,宜州市,Guangxi,Hechi,1993-09-09,1000000
+Yulin,玉林市,Guangxi,direct administration,1997-04-22,1000000
+Anshun,安顺市,Guizhou,direct administration,2000-06-23,1000000
+Bijie,毕节市,Guizhou,direct administration,2011-10-22,1000000
+Chishui,赤水市,Guizhou,Zunyi,1990-02-03,1000000
+Duyun,都匀市,Guizhou,Qiannan,1966-03-09,1000000
+Fuquan,福泉市,Guizhou,Qiannan,1996-12-02,1000000
+Guiyang,贵阳市,Guizhou,direct administration,1949-10-01,3037159
+Kaili,凯里市,Guizhou,Qiandongnan,1983-08-19,1000000
+Liupanshui,六盘水市,Guizhou,direct administration,1978-12-18,1000000
+Qingzhen,清镇市,Guizhou,Guiyang,1992-11-06,1000000
+Renhuai,仁怀市,Guizhou,Zunyi,1996-11-30,1000000
+Tongren,铜仁市,Guizhou,direct administration,2011-10-22,1000000
+Xingyi,兴义市,Guizhou,Qianxinan,1987-11-06,1000000
+Zunyi,遵义市,Guizhou,direct administration,1997-06-10,1095189
+Danzhou,儋州市,Hainan,direct administration,2015-02-19,1000000
+Dongfang,东方市,Hainan,none,1997-03-12,1000000
+Haikou,海口市,Hainan,direct administration,1986-05-31,2046189
+Qionghai,琼海市,Hainan,none,1992-11-06,1000000
+Sansha,三沙市,Hainan,direct administration,2012-06-21,1000000
+Sanya,三亚市,Hainan,direct administration,1987-11-20,1000000
+Wanning,万宁市,Hainan,none,1996-08-05,1000000
+Wenchang,文昌市,Hainan,none,1995-11-07,1000000
+Wuzhishan,五指山市,Hainan,none,1986-06-12,1000000
+Anguo,安国市,Hebei,Baoding,1991-05-06,1000000
+Baoding,保定市,Hebei,direct administration,1983-11-15,1157891
+Bazhou,霸州市,Hebei,Langfang,1990-01-04,1000000
+Botou,泊头市,Hebei,Cangzhou,1982-12-13,1000000
+Cangzhou,沧州市,Hebei,direct administration,1983-11-15,536793
+Chengde,承德市,Hebei,direct administration,1983-11-15,1000000
+Dingzhou,定州市,Hebei,Baoding,1986-03-05,1165182
+Gaobeidian,高碑店市,Hebei,Baoding,1993-04-09,1000000
+Handan,邯郸市,Hebei,direct administration,1983-11-15,941427
+Hengshui,衡水市,Hebei,direct administration,1996-05-31,1000000
+Hejian,河间市,Hebei,Cangzhou,1990-10-18,1000000
+Huanghua,黄骅市,Hebei,Cangzhou,1989-07-27,1000000
+Jinzhou,晋州市,Hebei,Shijiazhuang,1991-11-30,1000000
+Jizhou,冀州市,Hebei,Hengshui,1993-09-22,1000000
+Langfang,廊坊市,Hebei,direct administration,1988-09-13,868066
+Nangong,南宫市,Hebei,Xingtai,1986-03-05,1000000
+Qian'an,迁安市,Hebei,Tangshan,1996-10-10,1000000
+Qinhuangdao,秦皇岛市,Hebei,direct administration,1983-03-03,1029670
+Renqiu,任丘市,Hebei,Cangzhou,1986-03-05,1000000
+Sanhe,三河市,Hebei,Langfang,1993-03-03,1000000
+Shahe,沙河市,Hebei,Xingtai,1987-02-20,1000000
+Shenzhou,深州市,Hebei,Hengshui,1994-07-04,1000000
+Shijiazhuang,石家庄市,Hebei,direct administration,1978-03-11,2861784
+Tangshan,唐山市,Hebei,direct administration,1978-03-11,3187171
+Xinji,辛集市,Hebei,Shijiazhuang,1986-03-05,1000000
+Wu'an,武安市,Hebei,Handan,1988-09-01,1000000
+Xingtai,邢台市,Hebei,direct administration,1983-11-15,688876
+Xinle,新乐市,Hebei,Shijiazhuang,1992-10-08,1000000
+Zhangjiakou,张家口市,Hebei,direct administration,1983-11-15,1000000
+Zhuozhou,涿州市,Hebei,Baoding,1986-09-24,1000000
+Zunhua,遵化市,Hebei,Tangshan,1992-02-17,1000000
+Anda,安达市,Heilongjiang,Suihua,1984-11-17,1000000
+Bei'an,北安市,Heilongjiang,Heihe,1982-12-18,1000000
+Daqing,大庆市,Heilongjiang,direct administration,1965-12-28,1649825
+Fujin,富锦市,Heilongjiang,Jiamusi,1988-08-30,1000000
+Hailin,海林市,Heilongjiang,Mudanjiang,1992-07-28,1000000
+Hailun,海伦市,Heilongjiang,Suihua,1989-12-23,1000000
+Harbin,哈尔滨市,Heilongjiang,direct administration,1954-06-19,4517549
+Hegang,鹤岗市,Heilongjiang,direct administration,1966-02-08,489232
+Heihe,黑河市,Heilongjiang,direct administration,1993-02-08,1000000
+Hulin,虎林市,Heilongjiang,Jixi,1996-10-11,1000000
+Jiamusi,佳木斯市,Heilongjiang,direct administration,1983-10-08,881711
+Jixi,鸡西市,Heilongjiang,direct administration,1966-02-08,1000000
+Mishan,密山市,Heilongjiang,Jixi,1988-11-17,1000000
+Mudanjiang,牡丹江市,Heilongjiang,direct administration,1983-10-08,965154
+Muling,穆棱市,Heilongjiang,Mudanjiang,1995-03-07,1000000
+Nehe,讷河市,Heilongjiang,Qiqihar,1992-09-02,1000000
+Ning'an,宁安市,Heilongjiang,Mudanjiang,1993-02-12,1000000
+Qiqihar,齐齐哈尔市,Heilongjiang,direct administration,1964-01-15,1481637
+Qitaihe,七台河市,Heilongjiang,direct administration,1983-10-08,1000000
+Shangzhi,尚志市,Heilongjiang,Harbin,1988-09-14,1000000
+Shuangyashan,双鸭山市,Heilongjiang,direct administration,1966-02-08,1000000
+Suifenhe,绥芬河市,Heilongjiang,Mudanjiang,1975-08-15,1000000
+Suihua,绥化市,Heilongjiang,direct administration,1999-12-28,877682
+Tieli,铁力市,Heilongjiang,Yichun,1988-09-13,1000000
+Tongjiang,同江市,Heilongjiang,Jiamusi,1987-02-24,1000000
+Wuchang,五常市,Heilongjiang,Harbin,1993-06-01,1000000
+Wudalianchi,五大连池市,Heilongjiang,Heihe,1983-10-08,1000000
+Yichun,伊春市,Heilongjiang,direct administration,1979-12-14,1000000
+Zhaodong,肇东市,Heilongjiang,Suihua,1986-09-08,1000000
+Anyang,安阳市,Henan,direct administration,1983-09-01,1146761
+Changge,长葛市,Henan,Xuchang,1993-12-14,1000000
+Dengfeng,登封市,Henan,Zhengzhou,1994-05-30,1000000
+Dengzhou,邓州市,Henan,Nanyang,1988-11-17,1468061
+Gongyi,巩义市,Henan,Zhengzhou,1991-06-12,1000000
+Hebi,鹤壁市,Henan,direct administration,1974-01-19,1000000
+Huixian,辉县市,Henan,Xinxiang,1988-10-11,1000000
+Jiaozuo,焦作市,Henan,direct administration,1974-01-19,865356
+Jiyuan,济源市,Henan,none,1988-06-25,1000000
+Kaifeng,开封市,Henan,direct administration,1961-12-25,896057
+Lingbao,灵宝市,Henan,Sanmenxia,1993-05-12,1000000
+Linzhou,林州市,Henan,Anyang,1994-01-24,1000000
+Luohe,漯河市,Henan,direct administration,1986-01-18,1000000
+Luoyang,洛阳市,Henan,direct administration,1964-04-30,1925948
+Mengzhou,孟州市,Henan,Jiaozuo,1996-04-29,1000000
+Nanyang,南阳市,Henan,direct administration,1994-07-01,1811732
+Pingdingshan,平顶山市,Henan,direct administration,1969-03-15,1033975
+Puyang,濮阳市,Henan,direct administration,1983-09-01,655631
+Qinyang,沁阳市,Henan,Jiaozuo,1989-09-27,1000000
+Ruzhou,汝州市,Henan,Pingdingshan,1988-06-25,1000000
+Sanmenxia,三门峡市,Henan,direct administration,1986-01-18,1000000
+Shangqiu,商丘市,Henan,direct administration,1997-06-10,1000000
+Weihui,卫辉市,Henan,Xinxiang,1988-10-08,1000000
+Wugang,舞钢市,Henan,Pingdingshan,1990-09-04,1000000
+Xiangcheng,项城市,Henan,Zhoukou,1993-12-16,1003626
+Xingyang,荥阳市,Henan,Zhengzhou,1994-04-05,1000000
+Xinmi,新密市,Henan,Zhengzhou,1994-04-05,1000000
+Xinxiang,新乡市,Henan,direct administration,1982-03-10,1047020
+Xinyang,信阳市,Henan,direct administration,1998-06-09,1229959
+Xinzheng,新郑市,Henan,Zhengzhou,1994-05-16,1000000
+Xuchang,许昌市,Henan,direct administration,1986-01-18,498058
+Yanshi,偃师市,Henan,Luoyang,1993-12-15,1000000
+Yima,义马市,Henan,Sanmenxia,1981-04-04,1000000
+Yongcheng,永城市,Henan,Shangqiu,1996-10-11,1000000
+Yuzhou,禹州市,Henan,Xuchang,1988-06-25,1131819
+Zhengzhou,郑州市,Henan,direct administration,1949-10-01,4253627
+Zhoukou,周口市,Henan,direct administration,2000-06-08,505139
+Zhumadian,驻马店市,Henan,direct administration,2000-06-08,1000000
+Anlu,安陆市,Hubei,Xiaogan,1987-09-04,1000000
+Chibi,赤壁市,Hubei,Xianning,1986-05-27,1000000
+Dangyang,当阳市,Hubei,Yichang,1988-10-22,1000000
+Danjiangkou,丹江口市,Hubei,Shiyan,1983-08-19,1000000
+Daye,大冶市,Hubei,Huangshi,1994-02-18,1000000
+Enshi,恩施市,Hubei,Enshi,1981-11-07,1000000
+Ezhou,鄂州市,Hubei,direct administration,1983-08-19,1048672
+Guangshui,广水市,Hubei,Suizhou,1988-10-11,1000000
+Hanchuan,汉川市,Hubei,Xiaogan,1997-03-12,1000000
+Honghu,洪湖市,Hubei,Jingzhou,1987-07-31,1000000
+Huanggang,黄冈市,Hubei,direct administration,1995-12-23,1000000
+Huangshi,黄石市,Hubei,direct administration,1950-08-30,764571
+Jingmen,荆门市,Hubei,direct administration,1983-08-19,1000000
+Jingzhou,荆州市,Hubei,direct administration,1994-09-29,1154086
+Laohekou,老河口市,Hubei,Xiangyang,1979-11-16,1000000
+Lichuan,利川市,Hubei,Enshi,1986-05-27,1000000
+Macheng,麻城市,Hubei,Huanggang,1986-05-27,1000000
+Qianjiang,潜江市,Hubei,none,1988-05-25,1000000
+Shishou,石首市,Hubei,Jingzhou,1986-05-27,1000000
+Shiyan,十堰市,Hubei,direct administration,1973-02-17,1000000
+Suizhou,随州市,Hubei,direct administration,2000-06-25,1000000
+Songzi,松滋市,Hubei,Jingzhou,1995-12-29,1000000
+Tianmen,天门市,Hubei,none,1987-08-03,1000000
+Wuhan,武汉市,Hubei,direct administration,1954-06-19,9780644
+Wuxue,武穴市,Hubei,Huanggang,1987-10-23,1000000
+Xiangyang,襄阳市,Hubei,direct administration,1979-06-21,2199689
+Xianning,咸宁市,Hubei,direct administration,1998-12-06,1000000
+Xiantao,仙桃市,Hubei,none,1986-05-27,1000000
+Xiaogan,孝感市,Hubei,direct administration,1993-04-10,1000000
+Yichang,宜昌市,Hubei,direct administration,1979-06-21,1411380
+Yicheng,宜城市,Hubei,Xiangyang,1994-06-10,1000000
+Yidu,宜都市,Hubei,Yichang,1987-11-30,1000000
+Yingcheng,应城市,Hubei,Xiaogan,1986-05-27,1000000
+Zaoyang,枣阳市,Hubei,Xiangyang,1988-01-08,1004741
+Zhijiang,枝江市,Hubei,Yichang,1996-07-30,1000000
+Zhongxiang,钟祥市,Hubei,Jingmen,1992-05-20,1000000
+Changde,常德市,Hunan,direct administration,1988-01-23,1458536
+Changning,常宁市,Hunan,Hengyang,1996-11-26,1000000
+Changsha,长沙市,Hunan,direct administration,1949-10-01,3093980
+Chenzhou,郴州市,Hunan,direct administration,1994-12-17,1000000
+Hengyang,衡阳市,Hunan,direct administration,1980-02-20,1135166
+Hongjiang,洪江市,Hunan,Huaihua,1979-09-01,1000000
+Huaihua,怀化市,Hunan,direct administration,1997-11-29,1000000
+Jinshi,津市市,Hunan,Changde,1979-12-19,1000000
+Jishou,吉首市,Hunan,Xiangxi,1982-08-03,1000000
+Leiyang,耒阳市,Hunan,Hengyang,1986-11-11,1000000
+Lengshuijiang,冷水江市,Hunan,Loudi,1983-07-13,1000000
+Lianyuan,涟源市,Hunan,Loudi,1987-06-10,1000000
+Liling,醴陵市,Hunan,Zhuzhou,1985-05-24,1000000
+Linxiang,临湘市,Hunan,Yueyang,1992-09-01,1000000
+Liuyang,浏阳市,Hunan,Changsha,1993-01-16,1000000
+Loudi,娄底市,Hunan,direct administration,1999-01-20,1000000
+Miluo,汨罗市,Hunan,Yueyang,1987-09-23,1000000
+Shaoshan,韶山市,Hunan,Xiangtan,1990-12-26,1000000
+Shaoyang,邵阳市,Hunan,direct administration,1980-02-20,753194
+Wugang,武冈市,Hunan,Shaoyang,1994-02-18,1000000
+Xiangtan,湘潭市,Hunan,direct administration,1980-02-20,959303
+Xiangxiang,湘乡市,Hunan,Xiangtan,1986-09-12,1000000
+Yiyang,益阳市,Hunan,direct administration,1994-04-07,1000000
+Yongzhou,永州市,Hunan,direct administration,1995-11-21,1000000
+Yuanjiang,沅江市,Hunan,Yiyang,1988-10-11,1000000
+Yueyang,岳阳市,Hunan,direct administration,1983-02-08,1232133
+Zhangjiajie,张家界市,Hunan,direct administration,1988-05-18,1000000
+Zhuzhou,株洲市,Hunan,direct administration,1956-11-30,1055373
+Zixing,资兴市,Hunan,Chenzhou,1984-12-20,1000000
+Arxan,阿尔山市,Inner Mongolia,Hinggan,1996-06-10,1000000
+Baotou,包头市,Inner Mongolia,direct administration,1950-02-13,2070801
+Bayannur,巴彦淖尔市,Inner Mongolia,direct administration,2003-12-01,1000000
+Chifeng,赤峰市,Inner Mongolia,direct administration,1983-10-10,1333526
+Erenhot,二连浩特市,Inner Mongolia,Xilingol,1966-01-18,1000000
+Ergun,额尔古纳市,Inner Mongolia,Hulunbuir,1994-07-13,1000000
+Fengzhen,丰镇市,Inner Mongolia,Ulanqab,1990-11-15,1000000
+Genhe,根河市,Inner Mongolia,Hulunbuir,1994-04-28,1000000
+Hohhot,呼和浩特市,Inner Mongolia,direct administration,1950-01-18,1980774
+Holingol,霍林郭勒市,Inner Mongolia,Tongliao,1985-11-09,1000000
+Hulunbuir,呼伦贝尔市,Inner Mongolia,direct administration,2001-10-10,1000000
+Manzhouli,满洲里市,Inner Mongolia,Hulunbuir,1954-05-21,1000000
+Ordos,鄂尔多斯市,Inner Mongolia,direct administration,2001-02-26,1000000
+Tongliao,通辽市,Inner Mongolia,direct administration,1999-01-18,1000000
+Ulanhot,乌兰浩特市,Inner Mongolia,Hinggan,1980-07-26,1000000
+Ulanqab,乌兰察布市,Inner Mongolia,direct administration,2003-12-01,1000000
+Wuhai,乌海市,Inner Mongolia,direct administration,1975-08-30,1000000
+Xilinhot,锡林浩特市,Inner Mongolia,Xilingol,1983-10-10,1000000
+Yakeshi,牙克石市,Inner Mongolia,Hulunbuir,1983-10-10,1000000
+Zhalantun,扎兰屯市,Inner Mongolia,Hulunbuir,1983-10-10,1000000
+Changshu,常熟市,Jiangsu,Suzhou,1983-01-18,1510103
+Changzhou,常州市,Jiangsu,direct administration,1962-06-25,3290548
+Danyang,丹阳市,Jiangsu,Zhenjiang,1987-12-15,960418
+Dongtai,东台市,Jiangsu,Yancheng,1987-12-17,1000000
+Gaoyou,高邮市,Jiangsu,Yangzhou,1991-02-06,1000000
+Haimen,海门市,Jiangsu,Nantong,1994-04-26,907598
+Huai'an,淮安市,Jiangsu,direct administration,1983-01-18,2633420
+Jiangyin,江阴市,Jiangsu,Wuxi,1987-04-23,1594829
+Jingjiang,靖江市,Jiangsu,Taizhou,1993-07-14,617277
+Jurong,句容市,Jiangsu,Zhenjiang,1995-04-06,1000000
+Liyang,溧阳市,Jiangsu,Changzhou,1990-08-15,1000000
+Lianyungang,连云港市,Jiangsu,direct administration,1962-06-25,1049831
+Kunshan,昆山市,Jiangsu,Suzhou,1989-07-27,1000000
+Nanjing,南京市,Jiangsu,direct administration,1953-12-17,7165828
+Nantong,南通市,Jiangsu,direct administration,1962-06-25,2273326
+Pizhou,邳州市,Jiangsu,Xuzhou,1992-07-07,1458036
+Qidong,启东市,Jiangsu,Nantong,1989-11-13,972525
+Rugao,如皋市,Jiangsu,Nantong,1991-02-06,1267066
+Suqian,宿迁市,Jiangsu,direct administration,1996-07-19,1437686
+Suzhou,苏州市,Jiangsu,direct administration,1962-06-25,5349090
+Taicang,太仓市,Jiangsu,Suzhou,1993-01-08,1000000
+Taixing,泰兴市,Jiangsu,Taizhou,1992-09-21,1073921
+Taizhou,泰州市,Jiangsu,direct administration,1996-07-19,1417567
+Wuxi,无锡市,Jiangsu,direct administration,1949-10-01,3542319
+Xinghua,兴化市,Jiangsu,Taizhou,1987-12-22,1000000
+Xinyi,新沂市,Jiangsu,Xuzhou,1990-02-05,920610
+Xuzhou,徐州市,Jiangsu,direct administration,1962-06-25,3053778
+Yancheng,盐城市,Jiangsu,direct administration,1983-01-18,1615717
+Yangzhong,扬中市,Jiangsu,Zhenjiang,1994-05-18,1000000
+Yangzhou,扬州市,Jiangsu,direct administration,1983-01-18,2399079
+Yixing,宜兴市,Jiangsu,Wuxi,1988-01-09,1235476
+Yizheng,仪征市,Jiangsu,Yangzhou,1986-04-21,1000000
+Zhangjiagang,张家港市,Jiangsu,Suzhou,1986-09-16,1248414
+Zhenjiang,镇江市,Jiangsu,direct administration,1983-01-18,1200400
+Dexing,德兴市,Jiangxi,Shangrao,1990-12-26,1000000
+Fengcheng,丰城市,Jiangxi,Yichun,1988-10-04,1000000
+Fuzhou,抚州市,Jiangxi,direct administration,2000-06-23,1000000
+Ganzhou,赣州市,Jiangxi,direct administration,1998-12-24,642653
+Gao'an,高安市,Jiangxi,Yichun,1993-12-08,1000000
+Gongqingcheng,共青城市,Jiangxi,Jiujiang,2010-09-10,1000000
+Guixi,贵溪市,Jiangxi,Yingtan,1996-05-28,1000000
+Ji'an,吉安市,Jiangxi,direct administration,2000-05-11,1000000
+Jingdezhen,景德镇市,Jiangxi,direct administration,1953-06-15,1000000
+Jinggangshan,井冈山市,Jiangxi,Ji'an,1984-12-13,1000000
+Jiujiang,九江市,Jiangxi,direct administration,1980-03-28,592381
+Leping,乐平市,Jiangxi,Jingdezhen,1992-07-27,1000000
+Nanchang,南昌市,Jiangxi,direct administration,1949-10-01,2357838
+Pingxiang,萍乡市,Jiangxi,direct administration,1970-03-10,1000000
+Ruichang,瑞昌市,Jiangxi,Jiujiang,1989-12-20,1000000
+Ruijin,瑞金市,Jiangxi,Ganzhou,1989-12-20,1000000
+Shangrao,上饶市,Jiangxi,direct administration,2000-06-23,1000000
+Xinyu,新余市,Jiangxi,direct administration,1983-07-27,1000000
+Yichun,宜春市,Jiangxi,direct administration,2000-05-22,1000000
+Yingtan,鹰潭市,Jiangxi,direct administration,1983-07-27,1000000
+Zhangshu,樟树市,Jiangxi,Yichun,1988-10-13,1000000
+Baicheng,白城市,Jilin,direct administration,1993-06-14,1000000
+Baishan,白山市,Jilin,direct administration,1985-02-04,1000000
+Changchun,长春市,Jilin,direct administration,1954-06-19,3530115
+Da'an,大安市,Jilin,Baicheng,1988-08-30,1000000
+Dehui,德惠市,Jilin,Changchun,1994-07-06,1000000
+Dunhua,敦化市,Jilin,Yanbian,1985-02-28,1000000
+Fuyu,扶余市,Jilin,Songyuan,2013-01-24,1000000
+Gongzhuling,公主岭市,Jilin,Siping,1985-12-19,1000000
+Helong,和龙市,Jilin,Yanbian,1993-07-05,1000000
+Huadian,桦甸市,Jilin,Jilin,1988-05-25,1000000
+Hunchun,珲春市,Jilin,Yanbian,1988-05-25,1000000
+Ji'an,集安市,Jilin,Tonghua,1988-03-16,1000000
+Jiaohe,蛟河市,Jilin,Jilin,1989-08-15,1000000
+Jilin,吉林市,Jilin,direct administration,1949-10-01,1975803
+Liaoyuan,辽源市,Jilin,direct administration,1983-08-30,1000000
+Linjiang,临江市,Jilin,Baishan,1993-11-28,1000000
+Longjing,龙井市,Jilin,Yanbian,1988-05-25,1000000
+Meihekou,梅河口市,Jilin,Tonghua,1985-12-19,1000000
+Panshi,磐石市,Jilin,Jilin,1995-08-30,1000000
+Shuangliao,双辽市,Jilin,Siping,1996-04-29,1000000
+Shulan,舒兰市,Jilin,Jilin,1992-10-08,1000000
+Siping,四平市,Jilin,direct administration,1983-08-30,1000000
+Songyuan,松原市,Jilin,direct administration,1992-06-06,1000000
+Taonan,洮南市,Jilin,Baicheng,1987-05-21,1000000
+Tonghua,通化市,Jilin,direct administration,1985-02-04,1000000
+Tumen,图们市,Jilin,Yanbian,1965-03-27,1000000
+Yanji,延吉市,Jilin,Yanbian,1953-05-04,1000000
+Yushu,榆树市,Jilin,Changchun,1990-12-26,1000000
+Anshan,鞍山市,Liaoning,direct administration,1954-06-19,1544084
+Benxi,本溪市,Liaoning,direct administration,1954-06-19,1094294
+Beipiao,北票市,Liaoning,Chaoyang,1985-01-17,1000000
+Beizhen,北镇市,Liaoning,Jinzhou,1995-03-21,1000000
+Chaoyang,朝阳市,Liaoning,direct administration,1984-06-30,1000000
+Dalian,大连市,Liaoning,direct administration,1954-06-19,4087733
+Dandong,丹东市,Liaoning,direct administration,1949-10-01,798364
+Dashiqiao,大石桥市,Liaoning,Yingkou,1992-11-03,1000000
+Dengta,灯塔市,Liaoning,Liaoyang,1996-08-27,1000000
+Diaobingshan,调兵山市,Liaoning,Tieling,1981-02-09,1000000
+Donggang,东港市,Liaoning,Dandong,1993-06-18,1000000
+Fengcheng,凤城市,Liaoning,Dandong,1994-03-08,1000000
+Fushun,抚顺市,Liaoning,direct administration,1954-06-19,1356987
+Fuxin,阜新市,Liaoning,direct administration,1949-10-01,686848
+Gaizhou,盖州市,Liaoning,Yingkou,1992-11-03,1000000
+Haicheng,海城市,Liaoning,Anshan,1985-01-17,1293877
+Huludao,葫芦岛市,Liaoning,direct administration,1989-06-12,777682
+Jinzhou,锦州市,Liaoning,direct administration,1949-10-01,1091799
+Kaiyuan,开原市,Liaoning,Tieling,1988-12-27,1000000
+Liaoyang,辽阳市,Liaoning,direct administration,1965-12-27,655738
+Linghai,凌海市,Liaoning,Jinzhou,1993-11-16,1000000
+Lingyuan,凌源市,Liaoning,Chaoyang,1991-12-21,1000000
+Panjin,盘锦市,Liaoning,direct administration,1984-06-05,676464
+Shenyang,沈阳市,Liaoning,direct administration,1954-06-19,6255921
+Tieling,铁岭市,Liaoning,direct administration,1984-06-30,328555
+Wafangdian,瓦房店市,Liaoning,Dalian,1985-01-17,1000000
+Xingcheng,兴城市,Liaoning,Huludao,1986-09-12,1000000
+Xinmin,新民市,Liaoning,Shenyang,1993-06-14,1000000
+Yingkou,营口市,Liaoning,direct administration,1949-10-01,1032048
+Zhuanghe,庄河市,Liaoning,Dalian,1992-09-21,1000000
+Guyuan,固原市,Ningxia,direct administration,2001-07-07,1000000
+Lingwu,灵武市,Ningxia,Yinchuan,1996-09-16,1000000
+Qingtongxia,青铜峡市,Ningxia,Wuzhong,1984-12-17,1000000
+Shizuishan,石嘴山市,Ningxia,direct administration,1975-11-23,1000000
+Wuzhong,吴忠市,Ningxia,direct administration,1998-05-11,1000000
+Yinchuan,银川市,Ningxia,direct administration,1958-08-11,1290170
+Zhongwei,中卫市,Ningxia,direct administration,2003-12-31,1000000
+Delhi,德令哈市,Qinghai,Haixi,1988-04-19,1000000
+Golmud,格尔木市,Qinghai,Haixi,1980-06-14,1000000
+Haidong,海东市,Qinghai,direct administration,2013-02-08,1000000
+Xining,西宁市,Qinghai,direct administration,1956-07-14,1198304
+Yushu,玉树市,Qinghai,Yushu,2013-07-04,1000000
+Ankang,安康市,Shaanxi,direct administration,2000-06-23,1000000
+Baoji,宝鸡市,Shaanxi,direct administration,1971-10-05,1437802
+Hancheng,韩城市,Shaanxi,Weinan,1983-09-09,1000000
+Hanzhong,汉中市,Shaanxi,direct administration,1996-02-21,1000000
+Huayin,华阴市,Shaanxi,Weinan,1990-12-27,1000000
+Shangluo,商洛市,Shaanxi,direct administration,2001-08-31,1000000
+Tongchuan,铜川市,Shaanxi,direct administration,1966-06-24,1000000
+Weinan,渭南市,Shaanxi,direct administration,1983-09-09,1000000
+Xi'an,西安市,Shaanxi,direct administration,1954-06-19,6501189
+Xianyang,咸阳市,Shaanxi,direct administration,1983-09-09,945420
+Xingping,兴平市,Shaanxi,Xianyang,1993-06-18,1000000
+Yan'an,延安市,Shaanxi,direct administration,1996-11-05,1000000
+Yulin,榆林市,Shaanxi,direct administration,1999-12-05,637617
+Anqiu,安丘市,Shandong,Weifang,1994-01-18,1000000
+Binzhou,滨州市,Shandong,direct administration,2000-06-10,709700
+Changyi,昌邑市,Shandong,Weifang,1994-06-10,1000000
+Dezhou,德州市,Shandong,direct administration,1994-12-17,679600
+Dongying,东营市,Shandong,direct administration,1982-11-10,756700
+Feicheng,肥城市,Shandong,Tai'an,1992-08-01,946600
+Gaomi,高密市,Shandong,Weifang,1994-05-18,1000000
+Haiyang,海阳市,Shandong,Yantai,1996-04-29,1000000
+Heze,菏泽市,Shandong,direct administration,2000-06-23,1346700
+Jiaozhou,胶州市,Shandong,Qingdao,1987-02-12,1000000
+Jinan,济南市,Shandong,direct administration,1949-10-01,4786800
+Jining,济宁市,Shandong,direct administration,1983-08-30,1115300
+Jimo,即墨市,Shandong,Qingdao,1989-07-27,1000000
+Laiwu,莱芜市,Shandong,direct administration,1992-11-22,1298500
+Laixi,莱西市,Shandong,Qingdao,1990-12-18,1000000
+Laiyang,莱阳市,Shandong,Yantai,1987-02-20,1000000
+Laizhou,莱州市,Shandong,Yantai,1988-02-24,1000000
+Leling,乐陵市,Shandong,Dezhou,1988-09-01,1000000
+Liaocheng,聊城市,Shandong,direct administration,1997-08-29,1229800
+Linqing,临清市,Shandong,Liaocheng,1983-08-30,1000000
+Linyi,临沂市,Shandong,direct administration,1994-12-17,2600200
+Longkou,龙口市,Shandong,Yantai,1986-09-23,1000000
+Penglai,蓬莱市,Shandong,Yantai,1991-11-30,1000000
+Pingdu,平度市,Shandong,Qingdao,1989-07-27,1000000
+Qingdao,青岛市,Shandong,direct administration,1949-10-01,4814000
+Qingzhou,青州市,Shandong,Weifang,1986-03-01,1000000
+Qixia,栖霞市,Shandong,Yantai,1995-11-30,1000000
+Qufu,曲阜市,Shandong,Jining,1986-06-02,1000000
+Rizhao,日照市,Shandong,direct administration,1989-06-12,1143078
+Rongcheng,荣成市,Shandong,Weihai,1988-11-01,1000000
+Rushan,乳山市,Shandong,Weihai,1993-07-17,1000000
+Shouguang,寿光市,Shandong,Weifang,1993-06-01,1139400
+Tai'an,泰安市,Shandong,direct administration,1985-03-27,1735500
+Tengzhou,滕州市,Shandong,Zaozhuang,1988-03-07,1603700
+Weifang,潍坊市,Shandong,direct administration,1983-08-30,1521600
+Weihai,威海市,Shandong,direct administration,1987-06-15,908200
+Xintai,新泰市,Shandong,Tai'an,1983-08-30,1000000
+Yantai,烟台市,Shandong,direct administration,1983-08-30,1870600
+Yucheng,禹城市,Shandong,Dezhou,1993-09-09,1000000
+Zaozhuang,枣庄市,Shandong,direct administration,1961-09-12,2125136
+Zhangqiu,章丘市,Shandong,Jinan,1992-08-01,1064200
+Zhaoyuan,招远市,Shandong,Yantai,1991-12-21,1000000
+Zhucheng,诸城市,Shandong,Weifang,1987-04-20,1000000
+Zibo,淄博市,Shandong,direct administration,1961-09-12,2980800
+Zoucheng,邹城市,Shandong,Jining,1992-10-04,1116700
+Changzhi,长治市,Shanxi,direct administration,1975-07-09,1000000
+Datong,大同市,Shanxi,direct administration,1972-03-09,1737517
+Fenyang,汾阳市,Shanxi,Lüliang,1996-08-20,1000000
+Gaoping,高平市,Shanxi,Jincheng,1993-05-12,1000000
+Gujiao,古交市,Shanxi,Taiyuan,1988-02-24,1000000
+Hejin,河津市,Shanxi,Yuncheng,1994-01-12,1000000
+Houma,侯马市,Shanxi,Linfen,1971-06-05,1000000
+Huozhou,霍州市,Shanxi,Linfen,1989-12-23,1000000
+Jiexiu,介休市,Shanxi,Jinzhong,1992-02-10,1000000
+Jincheng,晋城市,Shanxi,direct administration,1985-04-30,1000000
+Jinzhong,晋中市,Shanxi,direct administration,1999-09-24,1000000
+Linfen,临汾市,Shanxi,direct administration,2000-06-23,944050
+Lucheng,潞城市,Shanxi,Changzhi,1994-04-26,1000000
+Lüliang,吕梁市,Shanxi,direct administration,2003-10-23,1000000
+Shuozhou,朔州市,Shanxi,direct administration,1988-03-24,1000000
+Taiyuan,太原市,Shanxi,direct administration,1949-10-01,3426522
+Xiaoyi,孝义市,Shanxi,Lüliang,1992-02-10,1000000
+Xinzhou,忻州市,Shanxi,direct administration,2000-06-14,1000000
+Yangquan,阳泉市,Shanxi,direct administration,1972-03-09,1000000
+Yongji,永济市,Shanxi,Yuncheng,1994-01-12,1000000
+Yuncheng,运城市,Shanxi,direct administration,2000-06-14,1000000
+Yuanping,原平市,Shanxi,Xinzhou,1993-06-17,1000000
+Barkam,马尔康市,Sichuan,Aba,2015-10-13,1000000
+Bazhong,巴中市,Sichuan,direct administration,2000-06-14,1126790
+Chengdu,成都市,Sichuan,direct administration,1949-10-01,7677122
+Chongzhou,崇州市,Sichuan,Chengdu,1994-06-20,1000000
+Dazhou,达州市,Sichuan,direct administration,1999-06-20,1000000
+Deyang,德阳市,Sichuan,direct administration,1983-08-18,1000000
+Dujiangyan,都江堰市,Sichuan,Chengdu,1988-03-03,1000000
+Emeishan,峨眉山市,Sichuan,Leshan,1988-09-01,1000000
+Guang'an,广安市,Sichuan,direct administration,1998-07-31,1000000
+Guanghan,广汉市,Sichuan,Deyang,1988-02-24,1000000
+Guangyuan,广元市,Sichuan,direct administration,1985-02-08,1000000
+Huaying,华蓥市,Sichuan,Guang'an,1985-02-04,1000000
+Jiangyou,江油市,Sichuan,Mianyang,1988-02-24,1000000
+Jianyang,简阳市,Sichuan,Ziyang,1994-04-05,1000000
+Kangding,康定市,Sichuan,Garzê,2015-02-17,1000000
+Langzhong,阆中市,Sichuan,Nanchong,1991-01-12,1000000
+Leshan,乐山市,Sichuan,direct administration,1985-02-11,1000000
+Luzhou,泸州市,Sichuan,direct administration,1983-03-03,1000000
+Mianzhu,绵竹市,Sichuan,Deyang,1996-10-15,1000000
+Meishan,眉山市,Sichuan,direct administration,2000-06-10,1000000
+Mianyang,绵阳市,Sichuan,direct administration,1985-02-08,1355331
+Nanchong,南充市,Sichuan,direct administration,1993-07-02,1858875
+Neijiang,内江市,Sichuan,direct administration,1985-02-11,1251095
+Panzhihua,攀枝花市,Sichuan,direct administration,1965-04-22,787177
+Pengzhou,彭州市,Sichuan,Chengdu,1993-12-01,1000000
+Qionglai,邛崃市,Sichuan,Chengdu,1994-06-19,1000000
+Shifang,什邡市,Sichuan,Deyang,1995-11-08,1000000
+Suining,遂宁市,Sichuan,direct administration,1985-02-08,1000000
+Wanyuan,万源市,Sichuan,Dazhou,1993-07-14,1000000
+Xichang,西昌市,Sichuan,Liangshan,1979-07-19,1000000
+Ya'an,雅安市,Sichuan,direct administration,2000-06-14,1000000
+Yibin,宜宾市,Sichuan,direct administration,1996-10-05,836383
+Zigong,自贡市,Sichuan,direct administration,1949-10-01,1362062
+Ziyang,资阳市,Sichuan,direct administration,2000-06-14,1000000
+Chamdo,昌都市,Tibet,direct administration,2014-10-29,1000000
+Lhasa,拉萨市,Tibet,direct administration,1960-01-07,279074
+Nyingchi,林芝市,Tibet,direct administration,2015-03-16,1000000
+Shigatse,日喀则市,Tibet,direct administration,2014-06-26,1000000
+Aksu,阿克苏市,Xinjiang,Aksu,1983-08-19,535657
+Alashankou,阿拉山口市,Xinjiang,Bortala,2012-12-17,1000000
+Altay,阿勒泰市,Xinjiang,Altay,1984-11-17,190064
+Aral,阿拉尔市,Xinjiang,none,2002-09-17,1000000
+Artux,阿图什市,Xinjiang,Kizilsu,1986-06-07,1000000
+Beitun,北屯市,Xinjiang,none,2011-12-27,1000000
+Bole,博乐市,Xinjiang,Bortala,1985-06-24,1000000
+Changji,昌吉市,Xinjiang,Changji,1983-07-21,1000000
+Fukang,阜康市,Xinjiang,Changji,1992-11-03,1000000
+Hotan,和田市,Xinjiang,Hotan,1983-09-09,1000000
+Karamay,克拉玛依市,Xinjiang,direct administration,1982-02-16,261445
+Kashgar,喀什市,Xinjiang,Kashgar,1953-05-22,396795
+Khorgas,霍尔果斯市,Xinjiang,Ili,2014-06-26,1000000
+Kokdala,可克达拉市,Xinjiang,none,2015-03-16,1000000
+Korla,库尔勒市,Xinjiang,Bayingolin,1979-09-02,1000000
+Kumul,哈密市,Xinjiang,Kumul,1977-01-06,1000000
+Kuytun,奎屯市,Xinjiang,Ili,1975-08-29,1000000
+Shihezi,石河子市,Xinjiang,none,1976-01-02,1000000
+Shuanghe,双河市,Xinjiang,none,2014-01-25,1000000
+Tacheng,塔城市,Xinjiang,Tacheng,1984-11-17,1000000
+Tiemenguan,铁门关市,Xinjiang,none,2012-12-17,1000000
+Tumxuk,图木舒克市,Xinjiang,none,2002-09-17,1000000
+Turpan,吐鲁番市,Xinjiang,direct administration,2015-03-16,1000000
+Ürümqi,乌鲁木齐市,Xinjiang,direct administration,1949-10-01,3029372
+Wujiaqu,五家渠市,Xinjiang,none,2002-09-17,1000000
+Wusu,乌苏市,Xinjiang,Tacheng,1996-07-10,1000000
+Yining,伊宁市,Xinjiang,Ili,1953-05-22,1000000
+Anning,安宁市,Yunnan,Kunming,1995-10-13,1000000
+Baoshan,保山市,Yunnan,direct administration,2000-12-30,1000000
+Chuxiong,楚雄市,Yunnan,Chuxiong,1983-09-09,1000000
+Dali,大理市,Yunnan,Dali,1983-09-09,1000000
+Gejiu,个旧市,Yunnan,Honghe,1958-09-16,1000000
+Jinghong,景洪市,Yunnan,Xishuangbanna,1993-12-22,1000000
+Kaiyuan,开远市,Yunnan,Honghe,1981-01-18,1000000
+Kunming,昆明市,Yunnan,direct administration,1949-10-01,3583429
+Lincang,临沧市,Yunnan,direct administration,2003-12-26,1000000
+Lijiang,丽江市,Yunnan,direct administration,2002-12-26,155540
+Mang,芒市,Yunnan,Dehong,1996-10-28,1000000
+Mengzi,蒙自市,Yunnan,Honghe,2010-09-10,1000000
+Mile,弥勒市,Yunnan,Honghe,2013-01-24,1000000
+Pu'er,普洱市,Yunnan,direct administration,2003-10-30,1000000
+Qujing,曲靖市,Yunnan,direct administration,1997-05-06,740925
+Ruili,瑞丽市,Yunnan,Dehong,1992-06-26,1000000
+Shangri-La,香格里拉市,Yunnan,Dêqên,2014-12-16,1000000
+Tengchong,腾冲市,Yunnan,Baoshan,2015-08-01,1000000
+Xuanwei,宣威市,Yunnan,Qujing,1994-02-18,1000000
+Yuxi,玉溪市,Yunnan,direct administration,1997-12-13,1000000
+Zhaotong,昭通市,Yunnan,direct administration,2001-01-13,1000000
+Cixi,慈溪市,Zhejiang,Ningbo,1988-10-13,1462383
+Dongyang,东阳市,Zhejiang,Jinhua,1988-05-25,1000000
+Fenghua,奉化市,Zhejiang,Ningbo,1988-10-13,1000000
+Haining,海宁市,Zhejiang,Jiaxing,1986-03-01,1000000
+Hangzhou,杭州市,Zhejiang,direct administration,1949-10-01,6242000
+Huzhou,湖州市,Zhejiang,direct administration,1983-07-27,1000000
+Jiande,建德市,Zhejiang,Hangzhou,1992-04-01,1000000
+Jiangshan,江山市,Zhejiang,Quzhou,1987-11-27,1000000
+Jiaxing,嘉兴市,Zhejiang,direct administration,1983-07-27,1201900
+Jinhua,金华市,Zhejiang,direct administration,1985-05-15,1077300
+Lanxi,兰溪市,Zhejiang,Jinhua,1985-05-15,1000000
+Lin'an,临安市,Zhejiang,Hangzhou,1996-10-28,1000000
+Linhai,临海市,Zhejiang,Taizhou,1986-03-01,1028800
+Lishui,丽水市,Zhejiang,direct administration,2000-05-20,451400
+Longquan,龙泉市,Zhejiang,Lishui,1990-12-26,1000000
+Ningbo,宁波市,Zhejiang,direct administration,1949-12-20,3491597
+Pinghu,平湖市,Zhejiang,Jiaxing,1991-06-15,1000000
+Quzhou,衢州市,Zhejiang,direct administration,1985-05-15,1000000
+Ruian,瑞安市,Zhejiang,Wenzhou,1987-04-15,1000000
+Shaoxing,绍兴市,Zhejiang,direct administration,1983-07-27,883800
+Shengzhou,嵊州市,Zhejiang,Shaoxing,1995-08-30,1000000
+Taizhou,台州市,Zhejiang,direct administration,1994-08-22,1902500
+Tongxiang,桐乡市,Zhejiang,Jiaxing,1993-03-26,1000000
+Wenling,温岭市,Zhejiang,Taizhou,1994-02-18,1366800
+Wenzhou,温州市,Zhejiang,direct administration,1949-11-06,3039500
+Yiwu,义乌市,Zhejiang,Jinhua,1988-05-25,2038400
+Yongkang,永康市,Zhejiang,Jinhua,1992-08-24,1000000
+Yueqing,乐清市,Zhejiang,Wenzhou,1993-09-18,1000000
+Yuyao,余姚市,Zhejiang,Ningbo,1985-07-16,1000000
+Zhoushan,舟山市,Zhejiang,direct administration,1987-01-23,843000
+Zhuji,诸暨市,Zhejiang,Shaoxing,1989-09-27,1157900
