@@ -28,7 +28,7 @@ void setup() {
   for (TableRow row : food_table.rows()) {
     //int id = row.getInt("id");
     String start_date = row.getString("start");
-    String end_date = row.getString("end");
+    String end_date = row.getString("end"); //<>//
     int yummy = row.getInt("yummy");
     int healthy = row.getInt("healthy");
     String ingredients = row.getString("ingredients");
