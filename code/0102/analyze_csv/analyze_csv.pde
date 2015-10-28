@@ -8,43 +8,93 @@
 //
 // Reference
 // https://processing.org/reference/loadTable_.html
-// https://processing.org/reference/saveTable_.html
-// http://docs.oracle.com/javase/7/docs/api/java/lang/String.html
+// https://processing.org/tutorials/objects/
+// https://processing.org/reference/Array.html
+// https://processing.org/reference/key.html
 
 Table food_table;
+Meal[] all_meals;
+int meals_count;
 
 void setup() {
 
-  food_table = loadTable("food.csv", "header");
+  food_table = loadTable("food_formatted.csv", "header");
 
-  println(food_table.getRowCount() + " total rows in table");
+  meals_count = food_table.getRowCount();
+  all_meals = new Meal[meals_count];
 
   // read and format the data
+  int row_index = 0;
   for (TableRow row : food_table.rows()) {
-    int id = row.getInt("id");
+    //int id = row.getInt("id");
     String start_date = row.getString("start");
     String end_date = row.getString("end");
     int yummy = row.getInt("yummy");
     int healthy = row.getInt("healthy");
     String ingredients = row.getString("ingredients");
-    println("I had "+ingredients+" from " + start_date + " to " + end_date + ", " + "and it's " + yummy + " out of 10 yummy, " + healthy + " out of 10 healthy");
 
-    // reformat dates
-    row.setString("start", "2015-" + start_date.replace("/","-") + ":00");
-    row.setString("end", "2015-" + end_date.replace("/","-") + ":00");
+    all_meals[row_index] = new Meal(start_date, end_date, yummy, healthy, ingredients);
+    row_index ++;
   }
-  saveTable(food_table, "data/food_formatted.csv");
-  println("------------------------------------------");
-  println("formatted table is saved!");
-  println("------------------------------------------");
+}
 
-  // print new formatted table
-  for (TableRow row : food_table.rows()) {
-    String start_date = row.getString("start");
-    String end_date = row.getString("end");
-    int yummy = row.getInt("yummy");
-    int healthy = row.getInt("healthy");
-    String ingredients = row.getString("ingredients");
-    println("I had "+ingredients+" from " + start_date + " to " + end_date + ", " + "and it's " + yummy + " out of 10 yummy, " + healthy + " out of 10 healthy");
+void draw() {
+}
+
+void keyPressed() {
+  if (key == '1') {
+    getGeneralStatistics();
   }
+  else if(key == '2') {
+    findEarlistMeal();
+  }
+  else if(key == '3') {
+    findMostHappyMeal();
+  }
+}
+
+void getGeneralStatistics() {
+  int[] values = new int[meals_count];
+  int total = 0;
+  for (int i=0; i<meals_count; i++) {
+    values[i] = all_meals[i].duration;
+    total += values[i];
+  }
+  println();
+  println("The max minutes is: " + max(values) + ", the min minutes is: " + min(values));
+  println("The total is: " + total + ", the average is: " + total/meals_count);
+  println("------------------------------------------");
+}
+
+void findEarlistMeal() {
+  int earliest_index = 0;
+  long earliest_meal_absolute_time = new Date().getTime();
+  for (int i=0; i<meals_count; i++) {
+    if( all_meals[i].start.getTime() < earliest_meal_absolute_time) {
+        earliest_meal_absolute_time = all_meals[i].start.getTime();
+        earliest_index = i;
+    }
+  }
+  Meal earliest_meal = all_meals[earliest_index];
+  println();
+  println("The earliest meal is: No." + earliest_index + " with timestamp of '" + earliest_meal.start.toString() + "'.");
+  println("------------------------------------------");
+}
+
+// Yummy and Healthy
+void findMostHappyMeal() {
+  float yummy_weight = 0.5;
+  float healthy_weight = 0.5;
+  int happiest_index = 0;
+  float happiest_score = 0;
+  for (int i=0; i<meals_count; i++) {
+    if( all_meals[i].yummy*yummy_weight + all_meals[i].healthy*healthy_weight > happiest_score) {
+        happiest_score = all_meals[i].yummy * yummy_weight + all_meals[i].healthy * healthy_weight;
+        happiest_index = i;
+    }
+  }
+  Meal happiest_meal = all_meals[happiest_index];
+  println();
+  println("The happiest meal is: No." + happiest_index + " with ingridences: '" + happiest_meal.ingredients + "'.");
+  println("------------------------------------------");
 }
