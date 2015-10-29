@@ -21,13 +21,14 @@ Meal[] all_meals;
 int meals_count;
 
 void setup() {
-
+  // load data from file into memory
   food_table = loadTable("food_formatted.csv", "header");
-
+  // store number of rows
   meals_count = food_table.getRowCount();
+  // initialize all meals array
   all_meals = new Meal[meals_count];
 
-  // read and format the data
+  // loop through all meals
   int row_index = 0;
   for (TableRow row : food_table.rows()) {
     //int id = row.getInt("id");
@@ -36,7 +37,8 @@ void setup() {
     int yummy = row.getInt("yummy");
     int healthy = row.getInt("healthy");
     String ingredients = row.getString("ingredients");
-
+    
+    // create a new meal object and store it in the array
     all_meals[row_index] = new Meal(start_date, end_date, yummy, healthy, ingredients);
     row_index ++;
   }
@@ -64,14 +66,18 @@ void findMealsLessThan10Minutes() {
 }
 
 void findAndSortMealsLessThan10Minutes() {
+  // make a deep copy of array
   Meal[] copied = Arrays.copyOf(all_meals, meals_count);
+  // sort the array of objects by comparing a value from it
   Arrays.sort(copied, new MealDurationComparator());
+  // create an array list to store the filtered items
   ArrayList<Meal> filtered = new ArrayList<Meal>();
   for ( Meal one : copied ) {
     if ( one.duration < 10 ) {
       filtered.add(one);
     }
   }
+  // print out the results
   for ( Meal one : filtered ) {
     one.printOut();
   }

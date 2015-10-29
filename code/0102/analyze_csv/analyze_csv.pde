@@ -1,6 +1,7 @@
 // The following short CSV file called "food_formatted.csv" is parsed
 // in the code below. It must be in the project's "data" folder.
 //
+// sample data from file
 // id,start,end,yummy,healthy,ingredients
 // 0,2015-10-14 08:48:00,2015-10-14 08:55:00,8,10,fruits|nuts
 // 1,2015-10-14 13:22:00,2015-10-14 13:31:00,5,3,bread
@@ -18,12 +19,15 @@ int meals_count;
 
 void setup() {
 
+  // load data from file into memory
   food_table = loadTable("food_formatted.csv", "header");
 
+  // store number of rows
   meals_count = food_table.getRowCount();
+  // create array of object
   all_meals = new Meal[meals_count];
 
-  // read and format the data
+  // loop through all meals
   int row_index = 0;
   for (TableRow row : food_table.rows()) {
     //int id = row.getInt("id");
@@ -33,6 +37,7 @@ void setup() {
     int healthy = row.getInt("healthy");
     String ingredients = row.getString("ingredients");
 
+    // created new meal object and save into all meals array
     all_meals[row_index] = new Meal(start_date, end_date, yummy, healthy, ingredients);
     row_index ++;
   }
@@ -53,6 +58,7 @@ void keyPressed() {
   }
 }
 
+
 void getGeneralStatistics() {
   int[] values = new int[meals_count];
   int total = 0;
@@ -68,10 +74,10 @@ void getGeneralStatistics() {
 
 void findEarlistMeal() {
   int earliest_index = 0;
-  long earliest_meal_absolute_time = new Date().getTime();
+  long earliest_meal_absolute_time = 24 * 60; // largest minutes number in a day
   for (int i=0; i<meals_count; i++) {
-    if( all_meals[i].start.getTime() < earliest_meal_absolute_time) {
-        earliest_meal_absolute_time = all_meals[i].start.getTime();
+    if( all_meals[i].start.getHours() * 60 + all_meals[i].start.getMinutes() < earliest_meal_absolute_time) {
+        earliest_meal_absolute_time = all_meals[i].start.getHours() * 60 + all_meals[i].start.getMinutes();
         earliest_index = i;
     }
   }
@@ -83,16 +89,20 @@ void findEarlistMeal() {
 
 // Yummy and Healthy
 void findMostHappyMeal() {
-  float yummy_weight = 0.5;
-  float healthy_weight = 0.5;
-  int happiest_index = 0;
-  float happiest_score = 0;
+  float yummy_weight = 0.8; // 0.8 means 80% 
+  float healthy_weight = 0.2; // healthy_weight + yummy_weight = 1
+  int happiest_index = 0; // store happiest meal index
+  float happiest_score = 0; //store happiest meal score
   for (int i=0; i<meals_count; i++) {
+    // check whether score is bigger than current highest one
     if( all_meals[i].yummy*yummy_weight + all_meals[i].healthy*healthy_weight > happiest_score) {
+        // store current one as highest
         happiest_score = all_meals[i].yummy * yummy_weight + all_meals[i].healthy * healthy_weight;
+        // store its index
         happiest_index = i;
     }
   }
+  // retrieve the happiest meal by index
   Meal happiest_meal = all_meals[happiest_index];
   println();
   println("The happiest meal is: No." + happiest_index + " with ingridences: '" + happiest_meal.ingredients + "'.");

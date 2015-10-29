@@ -21,13 +21,14 @@ Meal[] all_meals;
 int meals_count;
 
 void setup() {
-
+  // load data from file into memory
   food_table = loadTable("food_formatted.csv", "header");
-
+  // store number of rows
   meals_count = food_table.getRowCount();
+  // initialize all meals array
   all_meals = new Meal[meals_count];
 
-  // read and format the data
+  // loop through all meals
   int row_index = 0;
   for (TableRow row : food_table.rows()) {
     //int id = row.getInt("id");
@@ -36,7 +37,8 @@ void setup() {
     int yummy = row.getInt("yummy");
     int healthy = row.getInt("healthy");
     String ingredients = row.getString("ingredients");
-
+    
+    // create a new meal object and store it in the array
     all_meals[row_index] = new Meal(start_date, end_date, yummy, healthy, ingredients);
     row_index ++;
   }
@@ -51,6 +53,7 @@ void keyPressed() {
     for( Meal one : all_meals ){
       one.printOut();
     }
+    // sort the array of objects by comparing a value from it
     Arrays.sort(all_meals, new MealYummyComparator());
     println("After Sort by Yummy:");
     for( Meal one : all_meals ){
@@ -62,6 +65,7 @@ void keyPressed() {
     for( Meal one : all_meals ){
       one.printOut();
     }
+    // sort the array of objects by comparing a value from it
     Arrays.sort(all_meals, new MealHealthyComparator());
     println("After Sort by Healthy:");
     for( Meal one : all_meals ){
