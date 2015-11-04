@@ -39,7 +39,7 @@ void setup() {
 
     // created new meal object and save into all meals array
     all_meals[row_index] = new Meal(start_date, end_date, yummy, healthy, ingredients);
-    row_index ++;
+     row_index ++;
   }
 }
 
