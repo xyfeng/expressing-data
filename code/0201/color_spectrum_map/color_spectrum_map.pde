@@ -28,7 +28,7 @@ void setup() {
   }
 
 
-  // Map Saturation from color(40, 100, 0) to color(40, 100, 100)
+  // Map Brightness from color(40, 100, 0) to color(40, 100, 100)
   for (int i=0; i <= color_steps; i++) {
     float saturation = map(i, 0, color_steps, 0, 100 );
     color intermediary_color = color(40, 100, saturation);
