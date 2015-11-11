@@ -1,19 +1,23 @@
+// Reference
+// Video: https://vimeo.com/63635193
+// 1280 x 720
+
 import generativedesign.*;
-
-PImage img;
-color[] colors;
-
+import processing.video.*;
 int tileCount;
 float rectSize;
 
+Movie myMovie;
+color[] colors;
 String sortMode = null;
 
 void setup() {
-  size(600, 600);
+  size(720, 720);
   noStroke();
   colorMode(HSB, 360, 100, 100, 100);
 
-  img = loadImage("01.jpeg");
+  myMovie = new Movie(this, "shanghai.mp4");
+  myMovie.loop();
 }
 
 void draw() {
@@ -29,9 +33,9 @@ void loadColor() {
   colors = new color[tileCount * tileCount];
   for ( int gridY=0; gridY < tileCount; gridY++ ) {
     for (int gridX=0; gridX < tileCount; gridX++ ) {
-      int px = (int)( gridX * rectSize );
+      int px = (int)( gridX * rectSize ) + (1280 - 720)/2;
       int py = (int)( gridY * rectSize );
-      colors[index] = img.get(px, py);
+      colors[index] = myMovie.get(px, py);
       index ++;
     }
   }
@@ -70,12 +74,8 @@ void keyReleased() {
   if (key == '5') {
     sortMode = GenerativeDesign.GRAYSCALE;
   }
-  
-  // change images
-  if (key == 'a') {
-    img = loadImage("01.jpeg");
-  }
-  if (key == 'b') {
-    img = loadImage("02.jpeg");
-  }
+}
+
+void movieEvent(Movie m) {
+  m.read();
 }
