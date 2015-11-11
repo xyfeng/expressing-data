@@ -1,5 +1,5 @@
 PImage img;
-int drawMode = 1;
+int drawMode = 5;
 int tileCount;
 float rectSize;
 
@@ -7,9 +7,10 @@ void setup() {
   size(600, 600);
   background(255);
   noStroke();
+  noCursor();
   strokeCap(SQUARE); 
 
-  tileCount = 30;
+  tileCount = 25;
   rectSize = width/ tileCount;
 
   img = loadImage("02.png");
@@ -76,7 +77,7 @@ void draw() {
         popMatrix();
       } else if (drawMode == 5) {
         // grayscale to eyes
-        float ellipseSize = rectSize;
+        float ellipseSize = rectSize * 0.9;
         // draw background circle
         fill(c);
         noStroke();
@@ -86,7 +87,7 @@ void draw() {
         // iris size
         float eyeSize = map(brightness(c), 0, 255, rectSize * 0.2, rectSize * 0.8 * mouseYFactor);
         // map iris position using radius and angle
-        float eyeRadius = map(hue(c), 0, 255, 0, ellipseSize/2 - eyeSize/2);
+        float eyeRadius = map(hue(c), 0, 255, ellipseSize/2 - eyeSize/2, 0);
         float eyeAngle = map(saturation(c), 0, 255, 0, PI * 2 * mouseXFactor);
         // use trigonometry to calculate the position
         float eyeX = cos(eyeAngle) * eyeRadius + rectX + rectSize/2;
