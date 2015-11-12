@@ -24,7 +24,7 @@ void draw() {
   rect(0, 0, width, 100);
   rect(0, 130, width, 100);
 
-  // add mouseFactor
+  // factors to tweek the effect
   float mouseXFactor = map(mouseX, 0, width, 0.01, 2);
   float mouseYFactor = map(mouseY, 0, height, 0.01, 2);
 

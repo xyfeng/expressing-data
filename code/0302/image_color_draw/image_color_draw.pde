@@ -18,10 +18,10 @@ void setup() {
 
 void draw() {
   background(255);
-
+  
   // factors to tweek the effect
-  float mouseXFactor = map(mouseX, 0, width, 0.05, 1);
-  float mouseYFactor = map(mouseY, 0, width, 0.05, 1);
+  float mouseXFactor = map(mouseX, 0, width, 0.01, 2);
+  float mouseYFactor = map(mouseY, 0, height, 0.01, 2);
 
   // loop through image pixels
   for (int gridX=0; gridX < tileCount; gridX++ ) {

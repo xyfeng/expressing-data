@@ -17,15 +17,16 @@ void setup() {
   tileCount = 30;
   rectSize = width/ tileCount;
 
-  myMovie = new Movie(this, "cart.mp4");
+  myMovie = new Movie(this, "shanghai.mp4");
   myMovie.loop();
 }
 
 void draw() {
   background(255);
 
-  float mouseXFactor = map(mouseX, 0, width, 0.05, 1);
-  float mouseYFactor = map(mouseY, 0, width, 0.05, 1);
+  // factors to tweek the effect
+  float mouseXFactor = map(mouseX, 0, width, 0.01, 2);
+  float mouseYFactor = map(mouseY, 0, height, 0.01, 2);
 
   for (int gridX=0; gridX < tileCount; gridX++ ) {
     for ( int gridY=0; gridY < tileCount; gridY++ ) {
