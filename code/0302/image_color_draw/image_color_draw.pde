@@ -1,5 +1,5 @@
 PImage img;
-int drawMode = 5;
+int drawMode = 1;
 int tileCount;
 float rectSize;
 
@@ -38,76 +38,65 @@ void draw() {
       // find the center position of the block on the canvas
       float centerX = rectX + rectSize/2;
       float centerY = rectY + rectSize/2;
+      
       // switch drawings
       if (drawMode == 1) {
-        // grayscale to line
         noFill();
         stroke(0);
-        strokeCap(SQUARE);
-        if ( grayScale < 128 ) {
-          strokeWeight(1);
-          line(rectX, rectY, rectX + rectSize, rectY + rectSize);
+        if (grayScale < 127)
+        {
+          strokeWeight(5 * mouseXFactor);
+          line(rectX, rectY, rectX+rectSize, rectY+rectSize);
         } else {
-          strokeWeight(10 * mouseXFactor);
-          line(rectX, rectY + rectSize, rectX + rectSize, rectY);
+          strokeWeight(1);
+          line(rectX+rectSize, rectY, rectX, rectY+rectSize);
         }
       } else if (drawMode == 2) {
-        // grayscale to line
-        float stroke = map(grayScale, 0, 255, 15, 0.1);
         noFill();
         stroke(0);
-        strokeWeight(stroke * mouseXFactor);
-        line(rectX, rectY, rectX + rectSize, rectY + rectSize);
+        float s = map(grayScale, 0, 255, 8, 0.1);
+        strokeWeight(s * mouseXFactor);
+        line(rectX, rectY, rectX+rectSize, rectY+rectSize);
       } else if (drawMode == 3) {
-        // grayscale to circle size
-        fill(c);
-        noStroke();
-        float ellipseSize = map(grayScale, 0, 255, rectSize * 2, 0);
-        ellipse(centerX, centerY, ellipseSize * mouseXFactor, ellipseSize * mouseXFactor);
-      } else if (drawMode == 4) {
-        // grayscale to rotation
-        float stroke = map(grayScale, 0, 255, 15, 0.1);
         noFill();
         stroke(0);
-        strokeWeight(stroke * mouseXFactor);
+        float s = map(grayScale, 0, 255, 8, 0.1);
+        float p = map(grayScale, 0, 255, 0, PI);
+        strokeWeight(s * mouseXFactor);
         pushMatrix();
-        translate(px, py);
-        rotate(grayScale/255.0 * PI * mouseYFactor);
-        line(0, 0, rectSize, rectSize);
+        translate(rectX, rectY);
+        rotate(p * mouseYFactor);
+        line(0, 0, rectSize, 0);
         popMatrix();
+      } else if (drawMode == 4) {
+        noFill();
+        stroke(c);
+        float s = map(grayScale, 0, 255, 8, 0.1);
+        strokeWeight(s * mouseXFactor);
+        int pxNext = round(min(gridX + 1, tileCount - 1) * rectSize);
+        color cNext = img.get(pxNext, py);
+        int grayScaleNext = getGrayScale(cNext);
+        float offsetPos = map(grayScale, 0, 255, 30, 0) * mouseYFactor;
+        float offsetPosNext = map(grayScaleNext, 0, 255, 30, 0) * mouseYFactor;
+        line(rectX - offsetPos, rectY + offsetPos, rectX + rectSize - offsetPosNext, rectY + offsetPosNext);
       } else if (drawMode == 5) {
-        // grayscale to eyes
-        float ellipseSize = rectSize * 0.9;
-        // draw background circle
         fill(c);
         noStroke();
+        float ellipseSize = map(grayScale, 0, 255, rectSize, 0) * mouseXFactor;
         ellipse(centerX, centerY, ellipseSize, ellipseSize);
-        // draw white pupil
-        fill(255);
-        // iris size
-        float eyeSize = map(brightness(c), 0, 255, rectSize * 0.2, rectSize * 0.8 * mouseYFactor);
-        // map iris position using radius and angle
-        float eyeRadius = map(hue(c), 0, 255, ellipseSize/2 - eyeSize/2, 0);
-        float eyeAngle = map(saturation(c), 0, 255, 0, PI * 2 * mouseXFactor);
-        // use trigonometry to calculate the position
-        float eyeX = cos(eyeAngle) * eyeRadius + rectX + rectSize/2;
-        float eyeY = sin(eyeAngle) * eyeRadius + rectY + rectSize/2;
-        // draw iris out
-        ellipse(eyeX, eyeY, eyeSize, eyeSize);
       } else if (drawMode == 6) {
-        // greyscale to linked line
-        float stroke = map(grayScale, 0, 255, 15, 0.1);
-        noFill();
-        stroke(0);
-        stroke(c);
-        strokeWeight(stroke * mouseXFactor);
-        // pixel index from the neighbor (next to current one on the right)
-        int pxNext = (int)( min(gridX + 1, tileCount - 1) * rectSize ); 
-        color c2 = img.get(pxNext, py);
-        int grayScale2 = getGrayScale(c2);
-        float d1 = map(grayScale, 0, 255, 50 * mouseYFactor, 0);
-        float d2 = map(grayScale2, 0, 255, 50 * mouseYFactor, 0);
-        line(rectX-d1, rectY+d1, rectX+rectSize-d2, rectY+d2);
+        fill(c);
+        noStroke();
+        float ellipseSize = rectSize*0.9;
+        ellipse(centerX, centerY, ellipseSize, ellipseSize);
+        //draw iris
+        fill(255);
+        float irisSize = map(grayScale, 0, 255, rectSize*0.5, rectSize*0.2);
+        float irisRadius = map(hue(c), 0, 255, (ellipseSize - irisSize)/2, 0);
+        float irisAngle = map(saturation(c), 0, 255, PI * 2, 0) * mouseXFactor;
+        float irisX = cos(irisAngle) * irisRadius;
+        float irisY = sin(irisAngle) * irisRadius;
+        ellipse(centerX + irisX, centerY + irisY, irisSize, irisSize);
       }
     }
   }
