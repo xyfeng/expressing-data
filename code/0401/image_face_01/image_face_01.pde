@@ -53,10 +53,10 @@ void drawPhoto(PImage img, int number) {
     for (int n=0; n < height; n++) {
       color c = img.get(m, n);
       int index = width * n + m;
-      //pixels[index] += c / total;
       allPixels[index].addColor(c, number);
       pixels[index] = allPixels[index].getColor();
     }
   }
   updatePixels();
 }
+

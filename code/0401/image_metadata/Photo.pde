@@ -68,6 +68,6 @@ class Photo {
 class altitudeComparator implements Comparator<Photo>{
   @Override
   public int compare(Photo o1, Photo o2) {
-    return int(o1.altitude - o2.altitude);
+    return int(o2.altitude - o1.altitude);
   }
 }
