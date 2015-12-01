@@ -1,5 +1,6 @@
 // Open Flights Data
 // http://openflights.org/data.html
+// http://www.movable-type.co.uk/scripts/latlong.html
 
 // step1: find airports in china
 // step2: find all destinations associated with that airport
@@ -125,6 +126,7 @@ void loadData() {
   }
 }
 
+// function to draw all the routes from one airport
 void drawAllRoutes(Airport srcAirport) {
   String sourceIATA = srcAirport.iata;
   for (Route oneRoute : routeArray) {
@@ -144,7 +146,7 @@ void drawAllRoutes(Airport srcAirport) {
               break;
             }
           }
-          color lineColor = lerpColor(color(60, 180, 30, 3), color(60, 30, 180, 3), airlineIndex/float(airlineArray.size()) );
+          color lineColor = lerpColor(color(60, 180, 30, 5), color(60, 30, 180, 5), airlineIndex/float(airlineArray.size()) );
           // draw arcs
           stroke(lineColor);
           drawArc(new PVector(srcAirport.longitude, srcAirport.latitude), new PVector(desAirport.longitude, desAirport.latitude));
@@ -155,6 +157,7 @@ void drawAllRoutes(Airport srcAirport) {
   }
 }
 
+// function to draw airport dots
 void drawAirports() {
   noStroke();
   fill(255, 120);
@@ -171,12 +174,14 @@ PVector geoToScreen(PVector geo)
     map(geo.y, tlCorner.y, brCorner.y, 0, height));
 }
 
+// function to draw straight lines between two geo coordinates
 void drawLine(PVector v1, PVector v2) {
   PVector v1Coord = geoToScreen(proj.transformCoords(v1));
   PVector v2Coord = geoToScreen(proj.transformCoords(v2));
   line(v1Coord.x, v1Coord.y, v2Coord.x, v2Coord.y);
 }
 
+// function to draw great cirlce arc between two geo coordinates
 void drawArc(PVector v1, PVector v2)
 { 
   ArrayList<PVector> segments = getArcSegments(v1, v2, 100);
@@ -209,9 +214,13 @@ ArrayList<PVector> getArcSegments(PVector v1, PVector v2, int num)
   float v1LatRadians = radians(v1.y);
   float v2LonRadians = radians(v2.x);
   float v2LatRadians = radians(v2.y);
+  
+  float deltaLat = v1LatRadians-v2LatRadians;
+  float deltaLon = v1LonRadians-v2LonRadians;
 
-  float distanceRadians = 2*asin(sqrt(pow((sin((v1LatRadians-v2LatRadians)/2)), 2) + cos(v1LatRadians)*cos(v2LatRadians)*pow((sin((v1LonRadians-v2LonRadians)/2)), 2)));
-
+  float haversine = pow(sin(deltaLat/2), 2) + cos(v1LatRadians)*cos(v2LatRadians)*pow(sin(deltaLon/2),2);
+  float distanceRadians = 2 * atan2(sqrt(haversine), sqrt(1-haversine));
+  
   segments.add(v1);
 
   float f = fractionalIncrement;
@@ -220,9 +229,9 @@ ArrayList<PVector> getArcSegments(PVector v1, PVector v2, int num)
     int counterMin = counter - 1;
     // f is expressed as a fraction along the route from point 1 to point 2
     float A = sin((1-f)*distanceRadians) / sin(distanceRadians);
-    float B = sin(f*distanceRadians)/sin(distanceRadians);
+    float B = sin(f*distanceRadians) / sin(distanceRadians);
     float x = A*cos(v1LatRadians)*cos(v1LonRadians) + B*cos(v2LatRadians)*cos(v2LonRadians);
-    float y = A*cos(v1LatRadians)*sin(v1LonRadians) +  B*cos(v2LatRadians)*sin(v2LonRadians);
+    float y = A*cos(v1LatRadians)*sin(v1LonRadians) + B*cos(v2LatRadians)*sin(v2LonRadians);
     float z = A*sin(v1LatRadians) + B*sin(v2LatRadians);
     float newlat = atan2(z, sqrt(pow(x, 2) + pow(y, 2)));
     float newlon = atan2(y, x);
