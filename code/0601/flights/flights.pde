@@ -132,7 +132,7 @@ void drawAllRoutes(Airport srcAirport) {
   for (Route oneRoute : routeArray) {
     // find one airport 
     if ( oneRoute.source.equals(sourceIATA) ) {
-      //println(one.destination);
+      //println(oneRoute.destination);
       for (Airport desAirport : airportArray) {
         if ( desAirport.iata.equals(oneRoute.destination)) {
           // find airline id
@@ -182,14 +182,29 @@ void drawLine(PVector v1, PVector v2) {
 }
 
 // function to draw great cirlce arc between two geo coordinates
+// When flights circle around the globe, we have coordinates
+// jumps from left side and right side, to prevent that, we need to 
+// compare current point with previous point.
 void drawArc(PVector v1, PVector v2)
 { 
   ArrayList<PVector> segments = getArcSegments(v1, v2, 100);
+  float currLng, prevLng = 1000;
   if (segments != null) {
     beginShape();
     for (PVector seg : segments) {
+      // check whether currLng exist
+      currLng = seg.x;
+      // check whether prevLng exist
+      if (prevLng != 1000) {
+        if ( abs(currLng - prevLng) > 350 ) {
+          endShape();
+          beginShape();
+        }
+      }
       PVector coord = geoToScreen(proj.transformCoords(seg));
       vertex(coord.x, coord.y);
+      // assign currLng to prevLng
+      prevLng = currLng;
     }
     endShape();
   }
@@ -214,19 +229,18 @@ ArrayList<PVector> getArcSegments(PVector v1, PVector v2, int num)
   float v1LatRadians = radians(v1.y);
   float v2LonRadians = radians(v2.x);
   float v2LatRadians = radians(v2.y);
-  
+
   float deltaLat = v1LatRadians-v2LatRadians;
   float deltaLon = v1LonRadians-v2LonRadians;
 
-  float haversine = pow(sin(deltaLat/2), 2) + cos(v1LatRadians)*cos(v2LatRadians)*pow(sin(deltaLon/2),2);
+  float haversine = pow(sin(deltaLat/2), 2) + cos(v1LatRadians)*cos(v2LatRadians)*pow(sin(deltaLon/2), 2);
   float distanceRadians = 2 * atan2(sqrt(haversine), sqrt(1-haversine));
-  
+
   segments.add(v1);
 
   float f = fractionalIncrement;
   int counter = 1;
   while (counter <  onelessNumberOfSeg) {
-    int counterMin = counter - 1;
     // f is expressed as a fraction along the route from point 1 to point 2
     float A = sin((1-f)*distanceRadians) / sin(distanceRadians);
     float B = sin(f*distanceRadians) / sin(distanceRadians);
