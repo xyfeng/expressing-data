@@ -52,16 +52,16 @@ void setupMap() {
   proj = new WebMercator();
 
   // World Map
-  //tlLng = -180.0;
-  //tlLat = 82.0;
-  //brLng = 180.0;
-  //brLat = -82.0;
+  tlLng = -180.0;
+  tlLat = 82.0;
+  brLng = 180.0;
+  brLat = -82.0;
 
   // China Map
-  tlLng = 73.554302;
-  tlLat = 53.562517;
-  brLng = 134.775703;
-  brLat = 18.153878;
+  //tlLng = 73.554302;
+  //tlLat = 53.562517;
+  //brLng = 134.775703;
+  //brLat = 18.153878;
 
   tlCorner = proj.transformCoords(new PVector(tlLng, tlLat));
   brCorner = proj.transformCoords(new PVector(brLng, brLat));
