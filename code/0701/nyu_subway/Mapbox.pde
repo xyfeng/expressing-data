@@ -16,7 +16,7 @@
 class Mapbox {
   // Mapbox Configuration
   String AccessToken = "pk.eyJ1IjoieHlmZW5nIiwiYSI6IjRZNzdCbEkifQ.y54-xYgxPAeDY0VYy9qEGw";
-  String MapStyleID = "mslee.ad466bba";
+  String MapStyleID = "mapbox.comic";
   // properties
   float centerLat;
   float centerLng;
@@ -39,9 +39,9 @@ class Mapbox {
   }
 
   PImage downloadImage() {
-    String imageURL = "https://api.mapbox.com/v4/" + MapStyleID + "/" + centerLng + "," + centerLat + "," + zoomLevel + "/" + width + "x" + height + ".png?access_token=" + AccessToken;
-    //String imageURL = "https://api.mapbox.com/styles/v1/edenhalperin/cifq0r0e5000q85m0d293k6mq/static/" + centerLng + "," + centerLat + "," + zoomLevel + "/" + width + "x" + height + "@2x?access_token=pk.eyJ1IjoiZWRlbmhhbHBlcmluIiwiYSI6IlFRZG0zMWMifQ.QUNKx4tIMjZfwmrE8SE6Bg&logo=false&attribution=false";
-    //println(imageURL);
+    //String imageURL = "https://api.mapbox.com/v4/" + MapStyleID + "/" + centerLng + "," + centerLat + "," + zoomLevel + "/" + width + "x" + height + ".png?access_token=" + AccessToken;
+    String imageURL = "https://api.mapbox.com/styles/v1/edenhalperin/cifq0r0e5000q85m0d293k6mq/static/" + centerLng + "," + centerLat + "," + zoomLevel + "/" + width + "x" + height + "@2x?access_token=pk.eyJ1IjoiZWRlbmhhbHBlcmluIiwiYSI6IlFRZG0zMWMifQ.QUNKx4tIMjZfwmrE8SE6Bg&logo=false&attribution=false";
+    println(imageURL);
     return loadImage(imageURL, "png");
     //return loadImage("mapbox.png");
   }
