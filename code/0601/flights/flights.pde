@@ -130,7 +130,7 @@ void loadData() {
 void drawAllRoutes(Airport srcAirport) {
   String sourceIATA = srcAirport.iata;
   for (Route oneRoute : routeArray) {
-    // find one airport 
+    // find one airport
     if ( oneRoute.source.equals(sourceIATA) ) {
       //println(oneRoute.destination);
       for (Airport desAirport : airportArray) {
@@ -170,7 +170,7 @@ void drawAirports() {
 // Convert from WebMercator coordinates to screen coordinates.
 PVector geoToScreen(PVector geo)
 {
-  return new PVector(map(geo.x, tlCorner.x, brCorner.x, 0, width), 
+  return new PVector(map(geo.x, tlCorner.x, brCorner.x, 0, width),
     map(geo.y, tlCorner.y, brCorner.y, 0, height));
 }
 
@@ -183,10 +183,10 @@ void drawLine(PVector v1, PVector v2) {
 
 // function to draw great cirlce arc between two geo coordinates
 // When flights circle around the globe, we have coordinates
-// jumps from left side and right side, to prevent that, we need to 
+// jumps from left side and right side, to prevent that, we need to
 // compare current point with previous point.
 void drawArc(PVector v1, PVector v2)
-{ 
+{
   ArrayList<PVector> segments = getArcSegments(v1, v2, 100);
   float currLng, prevLng = 1000;
   if (segments != null) {
@@ -212,7 +212,7 @@ void drawArc(PVector v1, PVector v2)
 
 // v1, v2 are PVector of coordinates ( longitude, latitude )
 // num is the number of segments, the value should be greater than 3, bigger number better details
-ArrayList<PVector> getArcSegments(PVector v1, PVector v2, int num) 
+ArrayList<PVector> getArcSegments(PVector v1, PVector v2, int num)
 {
   // limitations of the gicentre utils
   if (abs(v1.y) > 88.0 || abs(v2.y) > 88.0) {
