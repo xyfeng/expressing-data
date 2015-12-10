@@ -22,6 +22,7 @@ void setup()
 {
   size(1000, 736, P2D);
   background(255);
+  pixelDensity(2);
   smooth();
 
   setupMap();
@@ -52,16 +53,16 @@ void setupMap() {
   proj = new WebMercator();
 
   // World Map
-  //tlLng = -180.0;
-  //tlLat = 82.0;
-  //brLng = 180.0;
-  //brLat = -82.0;
+  tlLng = -180.0;
+  tlLat = 82.0;
+  brLng = 180.0;
+  brLat = -82.0;
 
   // China Map
-  tlLng = 73.554302;
-  tlLat = 53.562517;
-  brLng = 134.775703;
-  brLat = 18.153878;
+  //tlLng = 73.554302;
+  //tlLat = 53.562517;
+  //brLng = 134.775703;
+  //brLat = 18.153878;
 
   tlCorner = proj.transformCoords(new PVector(tlLng, tlLat));
   brCorner = proj.transformCoords(new PVector(brLng, brLat));
@@ -146,7 +147,7 @@ void drawAllRoutes(Airport srcAirport) {
               break;
             }
           }
-          color lineColor = lerpColor(color(60, 180, 30, 5), color(60, 30, 180, 5), airlineIndex/float(airlineArray.size()) );
+          color lineColor = lerpColor(color(60, 180, 30, 3), color(60, 30, 180, 3), airlineIndex/float(airlineArray.size()) );
           // draw arcs
           stroke(lineColor);
           drawArc(new PVector(srcAirport.longitude, srcAirport.latitude), new PVector(desAirport.longitude, desAirport.latitude));
