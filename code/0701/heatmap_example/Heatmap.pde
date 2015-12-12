@@ -121,8 +121,10 @@ public class Heatmap
         for (int x=0; x<width; x++)
         {
           double r = (heatdata[y][x] - datamin) / range;
-          int c = (int)(r*cl);
-          output.setRGB(x, y, colourmap[c]);
+          if (r != 0 ) {
+            int c = (int)(r*cl);
+            output.setRGB(x, y, colourmap[c]);
+          }
         }
       }
     }

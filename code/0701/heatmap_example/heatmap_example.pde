@@ -2,7 +2,7 @@ double[][] points;
 
 void setup() {
   size(600, 400);
-  pixelDensity(2);  
+  pixelDensity(2);
   background(255);
 
   points = new double[height][width];
@@ -16,7 +16,7 @@ void draw() {
 }
 
 void drawHeatMap() {
-  Heatmap hm = new Heatmap(points, 20);
+  Heatmap hm = new Heatmap(points, 30);
   BufferedImage bi = hm.makeImage();
   PImage heatmap = new PImage(bi);
   image(heatmap, 0, 0);
